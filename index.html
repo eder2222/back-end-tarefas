@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+       body {
+        font-family: Arial, sans-sarif;
+        background-color: #1a1a2e;
+        color: #eee;
+        text-align: center;
+        padding: 30px;
+       }
+
+       h1{
+        font-size: 2em;
+        color: #30d363;
+        margin-bottom: 8px;
+       }
+       
+        
+
+    </style>
+</head>
+<body>
+    <h1>Jogo de Perguntas</h1>
+    <p>Responda as perguntas e veja a sua pontuação!</p>
+
+    <div id="jogo">
+        <div class="pergunta">
+            <p>1. A tag p precisa ser fechada com p?</p>
+            <button onclick="responder(1,true)">Verdadeiro</button>
+            <button onclick="responder(1,false)">Falso</button>
+            <p id="feedback1"></p>
+        </div>
+
+        <div class="pergunta">
+            <p>2. CSS serve para definir a estrutura da página?</p>
+            <button onclick="responder(2,true)">Verdadeiro</button>
+            <button onclick="responder(2,false)">Falso</button>
+            <p id="feedback2"></p>
+        </div>
+
+        <div class="pergunta">
+            <p>3. JavaScript é uma linguagem de programação?</p>
+            <button onclick="responder(3,true)">Verdadeiro</button>
+            <button onclick="responder(3,false)">Falso</button>
+            <p id="feedback3"></p>
+        </div>
+            
+            <button ondlclick="verResultado">Ver minha pontuação</button>
+            <p id="resultado"></p>
+
+        </div>
+       
+</body>
+</html>
